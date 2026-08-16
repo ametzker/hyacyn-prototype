@@ -1,0 +1,20 @@
+{
+  "name": "hyacyn-digital-archive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "postinstall": "node scripts/copy-draco.js"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lil-gui": "^0.19.2",
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

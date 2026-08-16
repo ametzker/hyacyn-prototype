@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HYACYN digital archive prototype for RTW 25/26."
+    />
+    <title>HYACYN Digital Archive</title>
+  </head>
+  <body>
+    <div id="app" class="app app--loading">
+      <div id="scene-root" class="scene-root" data-scene-root aria-label="HYACYN runway archive scene"></div>
+      <div class="scene-scrim" data-selection-scrim></div>
+
+      <div class="loader" data-loader role="status" aria-live="polite">
+        <div class="loader__inner">
+          <h1>HYACYN</h1>
+          <p>DIGITAL ARCHIVE / RTW 25-26</p>
+          <p class="loader__progress">LOADING <span data-loading-value>00</span></p>
+          <p class="loader__error" data-loading-error hidden></p>
+        </div>
+      </div>
+
+      <header class="topbar" data-interface>
+        <div class="topbar__left">HYACYN ARCHIVE&nbsp;&nbsp;001</div>
+        <div class="topbar__brand" aria-label="HYACYN">HYACYN</div>
+        <div class="topbar__right">
+          <button type="button" class="text-control" data-about-button aria-expanded="false">
+            ABOUT
+          </button>
+        </div>
+      </header>
+
+      <aside class="archive-copy" data-interface aria-label="Collection">
+        <h2>RTW 25/26</h2>
+        <p>PARIS RUNWAY</p>
+        <p>MARCH 2025</p>
+        <button type="button" class="explore-control" data-explore-button>
+          EXPLORE THE SHOW <span aria-hidden="true"></span>
+        </button>
+      </aside>
+
+      <nav class="season-list" data-interface aria-label="Archive seasons">
+        <span class="season-list__item is-active"><span>25/26</span></span>
+        <span class="season-list__item" aria-disabled="true">24/25</span>
+        <span class="season-list__item" aria-disabled="true">23/24</span>
+        <span class="season-list__item" aria-disabled="true">22/23</span>
+        <span class="season-list__item" aria-disabled="true">21/22</span>
+      </nav>
+
+      <div class="hotspots" data-hotspots aria-label="Selectable runway looks"></div>
+
+      <aside class="look-panel" data-look-panel aria-hidden="true" aria-label="Look details">
+        <div class="look-panel__topline">
+          <div>
+            <h2 data-look-title>LOOK 00</h2>
+            <p data-look-collection>RTW 25/26</p>
+            <p data-look-index>00 / 37</p>
+          </div>
+          <button type="button" class="panel-close" data-close-look aria-label="Close look">
+            &times;
+          </button>
+        </div>
+
+        <div class="look-panel__section">
+          <h3>DETAILS</h3>
+          <ol data-garment-list></ol>
+        </div>
+
+        <div class="look-panel__section">
+          <h3>INFO</h3>
+          <p data-look-info></p>
+        </div>
+      </aside>
+
+      <div class="focus-help" data-focus-help hidden>
+        <p>DRAG TO ROTATE</p>
+        <p>SCROLL TO ZOOM</p>
+        <button type="button" data-back-runway>BACK TO RUNWAY</button>
+      </div>
+
+      <div class="about-note" data-about-note hidden>
+        HYACYN RTW 25/26 / DIGITAL RECONSTRUCTION OF RUNWAY LOOKS
+      </div>
+
+      <footer class="bottombar" data-interface>
+        <div>
+          <p>&copy; HYACYN 2025</p>
+          <p>DIGITAL ARCHIVE</p>
+        </div>
+        <div class="bottombar__center">DRAG TO EXPLORE<br />SCROLL TO MOVE</div>
+        <div class="bottombar__links">
+          <a href="#" data-static-link>INSTAGRAM</a>
+          <a href="#" data-static-link>CHANNEL</a>
+          <a href="#" data-static-link>CONTACT</a>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
