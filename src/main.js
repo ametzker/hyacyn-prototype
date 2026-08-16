@@ -19,7 +19,6 @@ const sceneManager = new SceneManager({
 
 ui.on('selectLook', (key) => sceneManager.selectLook(key));
 ui.on('closeLook', () => sceneManager.closeLook());
-ui.on('explore', () => sceneManager.explore());
 
 sceneManager.init().catch((error) => {
   console.error('[HYACYN] Fatal scene initialization error:', error);

@@ -623,14 +623,6 @@ export class SceneManager {
     return intersections[0]?.object.userData.lookKey || null;
   }
 
-  explore() {
-    if (this.state.mode !== 'runway') {
-      return;
-    }
-
-    this.cameraController.scrollProgress = Math.min(this.cameraController.scrollProgress + 0.38, 1);
-  }
-
   selectLook(key, { fromHash = false } = {}) {
     if (!this.models[key]) {
       return;

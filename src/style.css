@@ -201,7 +201,6 @@ a {
 }
 
 .text-control,
-.explore-control,
 .panel-close,
 .focus-help button {
   appearance: none;
@@ -214,7 +213,6 @@ a {
 }
 
 .text-control:hover,
-.explore-control:hover,
 .panel-close:hover,
 .focus-help button:hover,
 .bottombar__links a:hover {
@@ -245,25 +243,6 @@ a {
   color: rgba(244, 241, 235, 0.5);
   font-size: 12px;
   line-height: 1.25;
-}
-
-.explore-control {
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  width: max-content;
-  margin-top: 24px;
-  color: rgba(244, 241, 235, 0.6);
-  font-size: 11px;
-  pointer-events: auto;
-}
-
-.explore-control span {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border: 1px solid currentColor;
-  border-radius: 999px;
 }
 
 .season-list {

@@ -25,8 +25,7 @@ export class UIManager {
       focusHelp: document.querySelector('[data-focus-help]'),
       backRunway: document.querySelector('[data-back-runway]'),
       aboutButton: document.querySelector('[data-about-button]'),
-      aboutNote: document.querySelector('[data-about-note]'),
-      exploreButton: document.querySelector('[data-explore-button]')
+      aboutNote: document.querySelector('[data-about-note]')
     };
 
     this.createHotspots();
@@ -68,7 +67,6 @@ export class UIManager {
   bindEvents() {
     this.elements.closeLook.addEventListener('click', () => this.emit('closeLook'));
     this.elements.backRunway.addEventListener('click', () => this.emit('closeLook'));
-    this.elements.exploreButton.addEventListener('click', () => this.emit('explore'));
 
     this.elements.aboutButton.addEventListener('click', () => {
       const isOpen = !this.elements.aboutNote.hidden;
@@ -82,9 +80,6 @@ export class UIManager {
       });
     });
 
-    for (const link of document.querySelectorAll('[data-static-link]')) {
-      link.addEventListener('click', (event) => event.preventDefault());
-    }
   }
 
   updateLoading(progress) {
