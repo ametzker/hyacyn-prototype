@@ -6,7 +6,7 @@ export const looks = {
     index: '03/22',
     model: 'look3',
     garments: ['LEATHER VEST', 'SHORTS', 'SOCKS', 'SHOES'],
-    info: 'HYACYN RTW S/S 27\nPARIS - MARCH 2025\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
+    info: 'HYACYN RTW S/S 27\nPARIS - JULY 2026\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
   },
   look11: {
     id: '11',
@@ -15,7 +15,7 @@ export const looks = {
     index: '11/22',
     model: 'look11',
     garments: ['RED COAT', 'TROUSERS', 'SHOES', 'ACCESSORIES'],
-    info: 'HYACYN RTW S/S 27\nPARIS - MARCH 2025\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
+    info: 'HYACYN RTW S/S 27\nPARIS - JULY 2026\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
   }
 };
 
