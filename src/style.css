@@ -581,6 +581,11 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .bottombar {
+    left: 18px;
+    right: 18px;
+  }
+
   .topbar__right {
     justify-self: center;
     grid-column: 1;
@@ -636,6 +641,23 @@ a {
   }
 
   .bottombar__links {
+    display: inline-flex;
+    gap: 14px;
+  }
+
+  .app--look .bottombar {
+    opacity: 1 !important;
+    pointer-events: none;
+  }
+
+  .app--look .bottombar > div:first-child,
+  .app--look .bottombar__center {
     display: none;
+  }
+
+  .app--look .bottombar__links {
+    grid-column: 1 / -1;
+    justify-self: end;
+    pointer-events: auto;
   }
 }
