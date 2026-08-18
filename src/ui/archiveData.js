@@ -2,20 +2,20 @@ export const looks = {
   look3: {
     id: '03',
     title: 'LOOK 03',
-    collection: 'RTW 25/26',
+    collection: 'RTW S/S 27',
     index: '03/22',
     model: 'look3',
     garments: ['LEATHER VEST', 'SHORTS', 'SOCKS', 'SHOES'],
-    info: 'HYACYN RTW 25/26\nPARIS - MARCH 2025\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
+    info: 'HYACYN RTW S/S 27\nPARIS - MARCH 2025\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
   },
   look11: {
     id: '11',
     title: 'LOOK 11',
-    collection: 'RTW 25/26',
+    collection: 'RTW S/S 27',
     index: '11/22',
     model: 'look11',
     garments: ['RED COAT', 'TROUSERS', 'SHOES', 'ACCESSORIES'],
-    info: 'HYACYN RTW 25/26\nPARIS - MARCH 2025\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
+    info: 'HYACYN RTW S/S 27\nPARIS - MARCH 2025\nDIGITAL RECONSTRUCTION OF RUNWAY LOOK.'
   }
 };
 
